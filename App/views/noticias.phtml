@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta http-equiv="contet type" content="text/html;charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit-no">
+
+    <link rel="stylesheet" href="public/css/bootstraop.min.css">
+
+    <title>Notícias</title>
+</head> 
+<body>
+    <h1>Notícias</h1>
+    <div class="container">
+        <ul>  
+            <?php foreach($noticias as $noticia) { ?>     
+                
+                    <li><a href="<?php echo 'http://localhost/nbmaster/portal/noticia/' . $noticia['titulo_url'] ?>"><?php echo $noticia['titulo']; ?></a></li>
+                    
+            <?php } ?>
+        /<ul>  
+        
+    </div>
+</body>
+</html>
